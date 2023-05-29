@@ -11,3 +11,4 @@
 - Form: Renderizará un formulario. En el formulario donde se puede crear un personaje nuevo, los campos a rellenar estarán vacíos, y dicho personaje se añadirá al listado de personajes existentes con un evento onClick que llamará al método addCharacter desde el hook de useContext. En el formulario donde se pueden modificar los datos de un personaje existente, los campos aparecerán rellenos con los datos recogidos por los parámetros del objeto de cada personaje, y al hacer click en ‘guardar’ con el evento onClick se llamará al método editCharacter desde el hook de useContext.
 - Footer: Mostrará en la parte de abajo de la pantalla un título con el nombre del grupo del proyecto.
 - Error: Muestra en pantalla una imagen donde se ve escrito: ‘Error 404: Not found’ en el caso en el que el fetch de la url no se ejecute correctamente.
+
