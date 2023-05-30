@@ -8,7 +8,7 @@ describe("Given Error component", () => {
     });
 
     test("Then it should be in the document", () => {
-      const element = screen.getByText("Error 404 hdp");
+      const element = screen.getByRole("img");
       expect(element).toBeInTheDocument();
     });
   })
