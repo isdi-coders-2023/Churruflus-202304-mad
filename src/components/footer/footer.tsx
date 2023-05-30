@@ -1,9 +1,7 @@
-const Footer = () => {
+export function Footer() {
   return (
     <footer>
       <address>CHURRUFLUS</address>
     </footer>
   );
-};
-
-export default Footer;
+}

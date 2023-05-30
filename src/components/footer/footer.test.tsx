@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import Footer from "./footer";
+import { Footer } from "./footer";
 
 describe("Given Footer component", () => {
   describe("When it is instantiated", () => {
