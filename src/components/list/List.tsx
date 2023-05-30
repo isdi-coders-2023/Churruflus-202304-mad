@@ -10,7 +10,8 @@ export function List() {
     <ul className="characters">
       {characters.map((item) => (
         <li key={item._id}>
-          {item.Nombre} {item.Imagen}
+          {item.Nombre}
+          <img src={item.Imagen}></img>
         </li>
       ))}
     </ul>
