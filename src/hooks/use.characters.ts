@@ -4,15 +4,15 @@ import { Simpson } from "../models/simpson";
 
 export function useCharacters() {
   const [characters, setCharacters] = useState<Simpson[]>([]);
-  const charactersUrl = "https://apisimpsons.fly.dev/api/personajes";
+  const query = "";
 
   const repo: ApiRepository<Simpson> = useMemo(
-    () => new ApiRepository<Simpson>(charactersUrl),
+    () => new ApiRepository<Simpson>(),
     []
   );
 
   const handleLoad = useCallback(async () => {
-    const loadedCharacters = await repo.getAll();
+    const loadedCharacters = await repo.getAll(query);
     setCharacters(loadedCharacters);
   }, [repo]);
 
