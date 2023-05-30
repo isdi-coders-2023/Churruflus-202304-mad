@@ -1,7 +1,10 @@
+import { Header } from "./header/Header";
+
+
 export function App() {
   return (
     <>
-      <h2>App</h2>
+      <Header></Header>
     </>
   );
 }
