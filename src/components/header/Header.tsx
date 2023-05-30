@@ -1,4 +1,4 @@
-import styles from"./header.module.css";
+import styles from"./header.module.scss";
 
 export function Header() {
   const title = "The Simpsons API";
