@@ -1,7 +1,8 @@
-
 const Footer = () => {
   return (
-      <h2>CHURRUFLUS</h2>
+    <footer>
+      <address>CHURRUFLUS</address>
+    </footer>
   );
 };
 
