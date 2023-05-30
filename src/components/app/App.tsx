@@ -1,7 +1,6 @@
-import { Footer } from "./footer/footer";
-import { Header } from "./header/Header";
-import { List } from "./list/List";
-
+import { Footer } from "../footer/footer";
+import { Header } from "../header/Header";
+import { List } from "../list/List";
 
 export function App() {
   return (
@@ -9,7 +8,6 @@ export function App() {
       <Header></Header>
       <List></List>
       <Footer></Footer>
-
     </>
   );
 }
