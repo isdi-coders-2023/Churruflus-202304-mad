@@ -9,7 +9,9 @@ export function List() {
   return (
     <ul className="characters">
       {characters.map((item) => (
-        <li key={item._id}>{item.Nombre}</li>
+        <li key={item._id}>
+          {item.Nombre} {item.Imagen}
+        </li>
       ))}
     </ul>
   );

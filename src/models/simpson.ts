@@ -1,3 +1,7 @@
+export type ApiResponse = {
+  docs: Simpson[];
+};
+
 export type Simpson = {
   _id: string;
   Nombre: string;
