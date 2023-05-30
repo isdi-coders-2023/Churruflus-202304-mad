@@ -1,7 +1,8 @@
+import styles from "./footer.module.scss"
 export function Footer() {
   return (
-    <footer>
-      <address>CHURRUFLUS</address>
+    <footer className={styles.footer}>
+      <address className={styles.text}>CHURRUFLUS</address>
     </footer>
   );
 }
