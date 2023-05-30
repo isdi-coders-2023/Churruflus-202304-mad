@@ -1,7 +1,7 @@
-export  function Error() {
+export function Error() {
   return (
     <div className="loaded-route">
-      <h2>Error 404 hdp</h2>
+<img src="./public/simpsons-404.jpg" alt="Error 404 page not found" />
     </div>
   );
 }
