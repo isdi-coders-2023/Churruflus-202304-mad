@@ -1,4 +1,11 @@
+
+import styles from "./header.module.scss";
+
+export default function Header() {
+  const title = "The Simpsons API";
+
 import "./header.module.scss";
+
 
 type PropsType = {
   children: JSX.Element;
