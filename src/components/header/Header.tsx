@@ -1,14 +1,18 @@
-import styles from "./header.module.scss";
+import "./header.module.scss";
 
-export function Header() {
-  const title = "The Simpsons API";
+type PropsType = {
+  children: JSX.Element;
+  title: string;
+};
 
+export function Header({ children, title }: PropsType) {
   return (
     <>
-      <header className={styles.header}>
-        <h1>{title}</h1>
+      <header className="header">
+        <h1 className="title">{title}</h1>
         <img src="/donut3.png" alt="donut" />
       </header>
+      {children}
     </>
   );
 }
