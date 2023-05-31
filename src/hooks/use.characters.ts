@@ -1,16 +1,22 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useReducer } from "react";
 import { ApiRepository } from "../services/api.repository";
-import { ApiResponse, Simpson } from "../models/simpson";
-
+import { ApiResponse } from "../models/simpson";
+import { CharactersState, characterReducer } from "../reducers/reducer";
+import * as actionCreator from "../reducers/actions.creator";
 export function useCharacters() {
-  const [characters, setCharacters] = useState<Simpson[]>([]);
+  const initialState: CharactersState = {
+    characters: [],
+  };
+
+  const [characterState, dispatch] = useReducer(characterReducer, initialState);
+  //const [characters, setCharacters] = useState<Simpson[]>([]);
 
   const repo: ApiRepository = useMemo(() => new ApiRepository(), []);
 
   const handleLoad = useCallback(async () => {
     const getCharacters: ApiResponse = await repo.getAll();
     const charactersInfo = getCharacters.docs;
-    setCharacters(charactersInfo);
+    dispatch(actionCreator.loadCharacterAction(charactersInfo));
   }, [repo]);
 
   useEffect(() => {
@@ -18,7 +24,7 @@ export function useCharacters() {
   }, [handleLoad]);
 
   return {
-    characters,
+    characters: characterState.characters,
     handleLoad,
   };
 }
