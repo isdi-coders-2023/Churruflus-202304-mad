@@ -3,7 +3,7 @@ import { AppContext } from "../../context/app.context";
 import styles from "./list.module.scss";
 import { Card } from "../card/Card";
 
-export function List() {
+export default function List() {
   const {
     charactersContext: { characters },
   } = useContext(AppContext);
