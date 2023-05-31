@@ -1,6 +1,6 @@
 import styles from "./header.module.scss";
 
-export function Header() {
+export default function Header() {
   const title = "The Simpsons API";
 
   return (

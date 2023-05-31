@@ -1,13 +1,13 @@
-import { Header } from "../header/Header";
+import Header from "../header/Header";
 import { Footer } from "../footer/footer";
-import { List } from "../list/List";
+import { AppRoutes } from "../app.routes/app.routes";
 
 export function App() {
   return (
     <>
       <Header></Header>
-      <main className="main-container"></main>
-      <List></List>
+      <AppRoutes></AppRoutes>
+
       <Footer></Footer>
     </>
   );
