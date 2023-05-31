@@ -1,9 +1,16 @@
+import { useContext } from "react";
 import { Simpson } from "../../models/simpson";
+import { useParams } from "react-router-dom";
+import { AppContext } from "../../context/app.context";
 
-type PropsType = {
-  item: Simpson;
-};
-export const DetailCard = ({ item }: PropsType) => {
+export default function DetailCard() {
+  const { id } = useParams();
+  const {
+    charactersContext: { characters },
+  } = useContext(AppContext);
+
+  const item: Simpson = characters.find((item) => item._id === id) as Simpson;
+
   return (
     <>
       <section>
@@ -19,4 +26,4 @@ export const DetailCard = ({ item }: PropsType) => {
       </section>
     </>
   );
-};
+}
