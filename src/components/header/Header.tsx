@@ -4,7 +4,6 @@ type PropsType = {
   children: JSX.Element;
   title: string;
 };
-
 export function Header({ children, title }: PropsType) {
   return (
     <>
