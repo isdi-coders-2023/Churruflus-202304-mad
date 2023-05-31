@@ -24,7 +24,7 @@ describe("Given List component", () => {
     );
 
     test("Then it should contain an <li> element", () => {
-      const element = screen.getAllByRole("listitem");
+      const element = screen.getByRole("list");
       expect(element).toBeInTheDocument();
     });
   });
