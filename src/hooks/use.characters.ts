@@ -9,7 +9,6 @@ export function useCharacters() {
   };
 
   const [characterState, dispatch] = useReducer(characterReducer, initialState);
-  //const [characters, setCharacters] = useState<Simpson[]>([]);
 
   const repo: ApiRepository = useMemo(() => new ApiRepository(), []);
 

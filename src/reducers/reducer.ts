@@ -1,6 +1,6 @@
 import { Simpson } from "../models/simpson";
 import { CharacterAction } from "./actions.creator";
-import { actionTypes } from "./actons.types";
+import { actionTypes } from "./actions.types";
 
 export type CharactersState = {
   characters: Simpson[];
