@@ -6,12 +6,15 @@ export function Menu() {
   const handleReturnHome = () => {
     navigate("/");
   };
+  const handleReturnPrivate = () => {
+    navigate("apiPrivate");
+  };
   return (
     <nav className={styles.menu}>
       <ul>
         <li onClick={handleReturnHome}>Inicio</li>
         <span></span>
-        <li>Privada</li>
+        <li onClick={handleReturnPrivate}>Privada</li>
       </ul>
     </nav>
   );
