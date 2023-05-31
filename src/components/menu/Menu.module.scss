@@ -1,0 +1,23 @@
+.menu {
+  color: yellow;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  text-align: center
+  font-size 1rem;
+  font-family: Rock Salt;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 10px;
+}
