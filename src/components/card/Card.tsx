@@ -17,3 +17,4 @@ export const Card = ({ item }: PropsType) => {
     </>
   );
 };
+
