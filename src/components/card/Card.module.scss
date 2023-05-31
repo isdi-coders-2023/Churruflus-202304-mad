@@ -1,7 +1,6 @@
 .name {
   color: black;
   text-decoration: none;
-
 }
 .card_structure {
   display: flex;
@@ -10,4 +9,21 @@
   text-align: center;
   padding: 4rem;
   font-family: Rock Salt;
+}
+
+.name_box {
+  color: yellow;
+  background-color: #1e1e1c;
+  padding: 10;
+  font-family: Rock Salt;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 41px;
+  width: 211px;
+  left: 85px;
+  top: 411px;
+  border-radius: 20px;
 }

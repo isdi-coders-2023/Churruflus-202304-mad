@@ -11,8 +11,8 @@ export function App() {
       <Header title={title}>
         <Menu></Menu>
       </Header>
-      <AppRoutes></AppRoutes>
       <Button></Button>
+      <AppRoutes></AppRoutes>
       <main className="main-container"></main>
 
       <Footer></Footer>
