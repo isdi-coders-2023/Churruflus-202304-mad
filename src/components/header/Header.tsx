@@ -7,7 +7,11 @@ export function Header() {
     <>
       <header className={styles.header}>
         <h1>{title}</h1>
-        <img src="/donut3.png" alt="donut" />
+        <section>
+          <img className="hamburger" src="/donut3.png" alt="donut" />
+          <div className="line">inicio</div>
+          <div className="line">privada</div>
+        </section>
       </header>
     </>
   );
