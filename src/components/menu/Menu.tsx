@@ -1,4 +1,4 @@
-import styles from "./menu.module.scss";
+import styles from "./Menu.module.scss";
 export function Menu() {
   return (
     <nav className={styles.menu}>
