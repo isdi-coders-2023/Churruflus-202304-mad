@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { DetailCard } from "./Detail";
+import  {DetailCard}  from "./Detail";
 
 describe("Given DetailCard component", () => {
   describe("When it is intantiate", () => {
