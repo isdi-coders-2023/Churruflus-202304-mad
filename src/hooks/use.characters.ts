@@ -11,7 +11,6 @@ export function useCharacters() {
     const getCharacters: ApiResponse = await repo.getAll();
     const charactersInfo = getCharacters.docs;
     setCharacters(charactersInfo);
-    console.log(charactersInfo);
   }, [repo]);
 
   useEffect(() => {
