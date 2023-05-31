@@ -23,3 +23,7 @@ describe("Given DetailCard component", () => {
     });
   });
 });
+
+
+
+
