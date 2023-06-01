@@ -1,7 +1,7 @@
 import { Footer } from "../footer/footer";
 import { AppRoutes } from "../app.routes/app.routes";
 import { Menu } from "../menu/Menu";
-import { Button } from "../button/Button";
+
 import { Header } from "../header/Header";
 
 export function App() {
@@ -11,10 +11,8 @@ export function App() {
       <Header title={title}>
         <Menu></Menu>
       </Header>
-      <Button></Button>
-      <AppRoutes></AppRoutes>
-      <main className="main-container"></main>
 
+      <AppRoutes></AppRoutes>
       <Footer></Footer>
     </>
   );
