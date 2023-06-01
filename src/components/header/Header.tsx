@@ -1,5 +1,4 @@
 import styles from "./header.module.scss";
-import { useNavigate } from "react-router-dom";
 import "./header.module.scss";
 
 type PropsType = {
