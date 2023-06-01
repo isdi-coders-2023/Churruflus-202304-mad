@@ -1,3 +1,4 @@
+import path from "path";
 import "./Button.module.scss";
 import styles from "./button.module.scss";
 export function Button() {
