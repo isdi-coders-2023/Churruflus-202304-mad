@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { Error } from "./Errorpage";
+import Error from "./Errorpage";
 describe("Given Error component", () => {
   describe("When it is instantiate", () => {
     beforeEach(() => {
@@ -11,5 +11,5 @@ describe("Given Error component", () => {
       const element = screen.getByRole("img");
       expect(element).toBeInTheDocument();
     });
-  })
+  });
 });
