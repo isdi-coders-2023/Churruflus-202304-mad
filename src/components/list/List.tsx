@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../../context/app.context";
 import styles from "./List.module.scss";
 import { Card } from "../card/Card";
+import { Button } from "../button/Button";
 
 export default function List() {
   const {
