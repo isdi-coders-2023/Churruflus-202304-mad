@@ -6,11 +6,15 @@ export function Menu() {
     <nav className={styles.menu}>
       <ul>
         <li>
-         <Link to="/">Inicio</Link>
+          <Link className={styles.menu} to="/">
+            Inicio
+          </Link>
         </li>
         <span></span>
         <li>
-           <Link to="apiPrivate">Privada</Link>
+          <Link className={styles.menu} to="apiPrivate">
+            Privada
+          </Link>
         </li>
       </ul>
     </nav>

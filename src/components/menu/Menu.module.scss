@@ -1,12 +1,10 @@
 .menu {
   color: yellow;
   padding: 20px;
-
   text-align: center;
   background-color: #1e1e1c;
   text-align: center font-size 1rem;
   font-family: Rock Salt;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,8 +14,10 @@
   list-style: none;
   padding: 0;
   justify-content: center;
+
 }
 
 .menu li {
-  margin: 0 10px;
+  text-decoration: none;
 }
+
