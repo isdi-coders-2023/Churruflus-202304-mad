@@ -1,14 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Header } from "./Header";
-import { Menu } from "../menu/Menu";
 describe("Given Header component", () => {
   describe("When it is instantiate", () => {
     const title = "Los Simpsons API";
     beforeEach(() => {
       render(
         <Header title={title}>
-          <Menu></Menu>
+          <p>Test</p>
         </Header>
       );
     });
@@ -19,6 +18,10 @@ describe("Given Header component", () => {
     });
     test("it should display props values", () => {
       const elementTitle = screen.getByText(title);
+      expect(elementTitle).toBeInTheDocument();
+    });
+    test("it should display child values", () => {
+      const elementTitle = screen.getByText("Test");
       expect(elementTitle).toBeInTheDocument();
     });
   });
