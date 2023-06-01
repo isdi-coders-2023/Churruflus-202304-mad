@@ -11,3 +11,7 @@ export type Simpson = {
   Estado: string;
   Ocupacion: string;
 };
+
+export type SimpsonPaging = {
+  getAll(query: string, currentPage: number): Promise<ApiResponse>;
+};
