@@ -1,6 +1,5 @@
 import { useContext } from "react";
-import "./Button.module.scss";
-import styles from "./button.module.scss";
+import styles from "./Button.module.scss";
 import { AppContext } from "../../context/app.context";
 export function Button() {
   const {
