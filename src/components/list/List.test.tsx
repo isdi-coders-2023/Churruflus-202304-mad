@@ -9,7 +9,6 @@ describe("Given List component", () => {
   describe("When it is intantiate", () => {
     const characters = [
       { Nombre: "Bart Simpson", Estado: "Vivo" },
-      // { Nombre: "Hommer Simpson", Estado: "Muerto" },
     ] as Simpson[];
 
     const value: ContextStructure = {
