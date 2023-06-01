@@ -1,11 +1,20 @@
 import styles from "./Menu.module.scss";
+import { useNavigate } from "react-router-dom";
 export function Menu() {
+  const navigate = useNavigate();
+
+  const handleReturnHome = () => {
+    navigate("/");
+  };
+  const handleReturnPrivate = () => {
+    navigate("apiPrivate");
+  };
   return (
     <nav className={styles.menu}>
       <ul>
-        <li>Inicio</li>
+        <li onClick={handleReturnHome}>Inicio</li>
         <span></span>
-        <li>Privada</li>
+        <li onClick={handleReturnPrivate}>Privada</li>
       </ul>
     </nav>
   );
