@@ -8,14 +8,12 @@ type PropsType = {
 export const Card = ({ item }: PropsType) => {
   return (
     <Link to={"/details/" + item._id} className={styles.name}>
-
-        <ul className={styles.card_structure}>
-          <li>
-            <img src={item.Imagen} alt={item.Nombre} width="170" height="330" />
-          </li>
-          <li> {item.Nombre}</li>
-        </ul>
-
+      <ul className={styles.card_structure}>
+        <li>
+          <img src={item.Imagen} alt={item.Nombre} width="170" height="330" />
+        </li>
+        <li className={styles.name_box}> {item.Nombre}</li>
+      </ul>
     </Link>
   );
 };
