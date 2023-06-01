@@ -1,5 +1,5 @@
 import styles from "./header.module.scss";
-import "./header.module.scss";
+import "./Header.module.scss";
 
 type PropsType = {
   children: JSX.Element;
