@@ -8,20 +8,10 @@ import { AppContextProvider } from "../context/app.context.providers";
 const mockSimpson = {
   Nombre: "Bart Simpson",
 }
-// } as Book;
 
 ApiRepository.prototype.getAll = jest.fn();
-// ApiRepository.prototype.create = jest.fn();
-// ApiRepository.prototype.update = jest.fn();
-// ApiRepository.prototype.delete = jest.fn();
 
 (ApiRepository.prototype.getAll as jest.Mock).mockResolvedValue([mockSimpson]);
-
-// const mockSimpson = {
-//   getAll: jest
-//     .fn()
-//     .mockReturnValue(Promise.resolve([{ Nombre: "Bart Simpson" }])),
-// } as unknown as ApiRepository;
 
 describe("Given the TestComponente", () => {
   beforeEach(() => {
