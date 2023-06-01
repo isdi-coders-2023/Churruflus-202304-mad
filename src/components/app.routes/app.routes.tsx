@@ -5,6 +5,7 @@ const List = lazy(() => import("../list/List"));
 const Form = lazy(() => import("../form/Form"));
 const DetailPage = lazy(() => import("../detail/Detail"));
 const ApiPrivate = lazy(() => import("../api.private/Api.private"));
+const ErrorPage = lazy(() => import("../error/Errorpage"));
 
 export function AppRoutes() {
   return (
@@ -14,7 +15,7 @@ export function AppRoutes() {
         <Route path="/" element={<List></List>}></Route>
         <Route path="/form" element={<Form></Form>}></Route>
         <Route path="/details/:id" element={<DetailPage></DetailPage>}></Route>
-        {/* <Route path="*" element={<ErrorPage></ErrorPage>}></Route> */}
+        <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
       </Routes>
     </Suspense>
   );
