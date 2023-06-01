@@ -1,22 +1,26 @@
-import { useCallback, useEffect, useMemo, useReducer } from "react";
+import { useCallback, useEffect, useMemo, useReducer, useState } from "react";
 import { ApiRepository } from "../services/api.repository";
 import { ApiResponse } from "../models/simpson";
 import { CharactersState, characterReducer } from "../reducers/reducer";
 import * as actionCreator from "../reducers/actions.creator";
 export function useCharacters() {
+  const query = "?limit=5&page=";
   const initialState: CharactersState = {
     characters: [],
   };
 
   const [characterState, dispatch] = useReducer(characterReducer, initialState);
 
+  const [currentPage, setCurrentPage] = useState(0);
+
   const repo: ApiRepository = useMemo(() => new ApiRepository(), []);
 
   const handleLoad = useCallback(async () => {
-    const getCharacters: ApiResponse = await repo.getAll();
+    const getCharacters: ApiResponse = await repo.getAll(query, currentPage);
     const charactersInfo = getCharacters.docs;
     dispatch(actionCreator.loadCharacterAction(charactersInfo));
-  }, [repo]);
+    setCurrentPage;
+  }, [currentPage, repo]);
 
   useEffect(() => {
     handleLoad();
@@ -24,6 +28,8 @@ export function useCharacters() {
 
   return {
     characters: characterState.characters,
+    currentPage,
+    setCurrentPage,
     handleLoad,
   };
 }
