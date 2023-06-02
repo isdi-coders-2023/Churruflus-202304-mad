@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import styles from "./Button.module.scss";
+import styles from "./PagingButtons.module.scss";
 import { AppContext } from "../../context/app.context";
-export function Button() {
+export function PagingButtons() {
   const {
     charactersContext: { currentPage, setCurrentPage },
   } = useContext(AppContext);
