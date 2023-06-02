@@ -11,7 +11,7 @@ export function useCharacters() {
 
   const [characterState, dispatch] = useReducer(characterReducer, initialState);
 
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const repo: ApiRepository = useMemo(() => new ApiRepository(), []);
 
