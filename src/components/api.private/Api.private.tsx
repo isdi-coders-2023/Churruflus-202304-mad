@@ -1,8 +1,7 @@
-import styles from "./Api.private.module.scss";
 export default function ApiPrivate() {
   return (
     <>
-      <h2 className={styles.ei}>ei</h2>
+      <h2>ei</h2>
     </>
   );
 }
