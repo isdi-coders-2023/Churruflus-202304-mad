@@ -1,4 +1,3 @@
-import "./Error.module.scss";
 import styles from "./Error.module.scss";
 export default function ErrorPage() {
   return (
