@@ -18,7 +18,7 @@ export default function DetailCard() {
         <ul className={styles.card_structure}>
           <li>
             <li className={styles.name}>{item.Nombre}</li>
-            <img src={item.Imagen} alt={item.Nombre} width={150} height={257} />
+            <img src={item.Imagen} alt={item.Nombre} width={100} height={200} />
           </li>
           <li className={styles.detail}>{item.Genero}</li>
           <li className={styles.detail}>{item.Estado}</li>
