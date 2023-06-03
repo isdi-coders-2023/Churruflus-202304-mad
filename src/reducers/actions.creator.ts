@@ -3,7 +3,7 @@ import { actionTypes } from "./actions.types";
 
 export type CharacterAction = {
   type: string;
-  payload: Simpson[];
+  payload: Simpson[] | string;
 };
 
 export function loadCharacterAction(payload: Simpson[]): CharacterAction {

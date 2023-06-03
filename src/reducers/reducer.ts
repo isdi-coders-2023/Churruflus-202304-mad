@@ -10,7 +10,7 @@ export const characterReducer = (
   state: CharactersState,
   action: CharacterAction
 ) => {
-  let payload: Simpson[] | Simpson | number;
+  let payload: Simpson[] | Simpson | number | string;
   switch (action.type) {
     case actionTypes.load:
       payload = action.payload as Simpson[];

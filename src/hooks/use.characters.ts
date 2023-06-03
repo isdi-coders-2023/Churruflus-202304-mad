@@ -4,7 +4,7 @@ import { ApiResponse } from "../models/simpson";
 import { CharactersState, characterReducer } from "../reducers/reducer";
 import * as actionCreator from "../reducers/actions.creator";
 export function useCharacters() {
-  const query = "?limit=5&page=";
+  const query = "?limit=20&page=";
   const initialState: CharactersState = {
     characters: [],
   };
@@ -19,7 +19,6 @@ export function useCharacters() {
     const getCharacters: ApiResponse = await repo.getAll(query, currentPage);
     const charactersInfo = getCharacters.docs;
     dispatch(actionCreator.loadCharacterAction(charactersInfo));
-    setCurrentPage;
   }, [currentPage, repo]);
 
   useEffect(() => {
