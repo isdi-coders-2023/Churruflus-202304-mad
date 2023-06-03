@@ -12,8 +12,8 @@ export const Card = ({ item }: PropsType) => {
         <img
           src={item.Imagen}
           alt={item.Nombre}
-          width="170"
-          height="300"
+          width="140"
+          height="250"
           className={styles.image}
         />
         <p className={styles.name_box}> {item.Nombre}</p>

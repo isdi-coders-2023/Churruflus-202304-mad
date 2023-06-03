@@ -1,13 +1,12 @@
 import styles from "./Menu.module.scss";
 import { Link } from "react-router-dom";
 export function Menu() {
-
   return (
     <nav className={styles.menu}>
       <ul>
         <li>
-          <Link className={styles.menu} to="/">
-            Inicio
+          <Link className={styles.menu} to={"/"}>
+            Personajes
           </Link>
         </li>
         <span></span>
