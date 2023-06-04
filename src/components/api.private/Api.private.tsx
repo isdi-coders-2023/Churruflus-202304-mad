@@ -1,6 +1,10 @@
 import styles from "./Api.private.module.scss";
 
-export default function ApiPrivate() {
+type PropsType = {
+  children: JSX.Element;
+};
+
+export default function ApiPrivate({ children }: PropsType) {
   return (
     <>
       <div className={styles.private}>
@@ -16,6 +20,7 @@ export default function ApiPrivate() {
           alt="three nerd characters"
         />
       </div>
+      {children}
     </>
   );
 }
