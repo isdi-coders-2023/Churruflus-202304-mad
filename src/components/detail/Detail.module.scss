@@ -5,7 +5,7 @@
   margin-left: 480px;
   margin-right: 480px;
   background-color: #1e1e1c;
-  color: yellow;
+  color: #f2eb3e;
   margin-top: 30px;
   border-radius: 10%;
   padding: 33px;
@@ -18,7 +18,7 @@
   padding-top: 10px;
   padding-bottom: 20px;
   height: 490px;
-  word-break: break-all;
+  word-spacing: 0.2rem;
 }
 
 .history {
@@ -34,4 +34,23 @@ li {
 .name {
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .card_structure {
+    margin: 0;
+    padding: 0;
+    height: 489px;
+    margin-top: 16px;
+    padding-bottom: 111px;
+    margin-bottom: 91px;
+    padding-top: 18px;
+    margin: 10px;
+    margin-bottom: 41px;
+  }
+  .history {
+    width: 300px;
+    margin-left: 19px;
+    word-spacing: 0.2rem;
+  }
 }
