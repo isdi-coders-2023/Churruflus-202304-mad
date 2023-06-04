@@ -5,7 +5,7 @@ import styles from "./Card.module.scss";
 type PropsType = {
   item: Simpson;
 };
-export const Card = ({ item }: PropsType) => {
+export function Card({ item }: PropsType) {
   return (
     <Link to={"/details/" + item._id} className={styles.name}>
       <li key={item._id}>
@@ -20,4 +20,4 @@ export const Card = ({ item }: PropsType) => {
       </li>
     </Link>
   );
-};
+}
