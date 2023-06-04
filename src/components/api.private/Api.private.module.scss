@@ -1,0 +1,23 @@
+.private {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-family: Rock Salt, cursive;
+    background-color: black;
+    color: #f2eb3e;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+    object-fit: contain;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  img {
+    object-fit: contain;
+    max-height: 100%;
+  }
+}
