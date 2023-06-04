@@ -12,6 +12,7 @@ export function useCharacters() {
   const [characterState, dispatch] = useReducer(characterReducer, initialState);
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [filter, setFilter] = useState("Todos");
 
   const repo: ApiRepository = useMemo(() => new ApiRepository(), []);
 
@@ -30,5 +31,7 @@ export function useCharacters() {
     currentPage,
     setCurrentPage,
     handleLoad,
+    filter,
+    setFilter,
   };
 }
