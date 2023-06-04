@@ -7,4 +7,29 @@
   list-style: none;
   padding: 0;
   justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  display: flex;
+
+  button {
+    font-family: Rock Salt, cursive;
+    font-size: 0.5rem;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+    margin: 0.4rem;
+    background-color: #1e1e1c;
+    border-radius: 1.2rem;
+    color: #f2eb3e;
+    border: 1px solid transparent;
+  }
+
+  button:hover {
+    background-color: #f2eb3e;
+    color: #1e1e1c;
+    border: 0.1px solid #1e1e1c;
+    transition: 0.1s;
+  }
 }
