@@ -5,13 +5,13 @@ export function Menu() {
     <nav className={styles.menu}>
       <ul>
         <li>
-          <Link className={styles.menu} to={"/"}>
+          <Link className={styles.link} to={"/"}>
             Personajes
           </Link>
         </li>
         <span></span>
         <li>
-          <Link className={styles.menu} to="apiPrivate">
+          <Link className={styles.link} to="apiPrivate">
             Privada
           </Link>
         </li>

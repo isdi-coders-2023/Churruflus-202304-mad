@@ -26,9 +26,13 @@ export default function List() {
   return (
     <>
       <PagingButtons></PagingButtons>
-      <button onClick={() => setFilter("Todos")}>Mostrar Todos</button>
-      <button onClick={() => setFilter("Vivo")}>Mostrar Vivos</button>
-      <button onClick={() => setFilter("Fallecido")}>Mostrar Fallecidos</button>
+      <div className={styles.buttons}>
+        <button onClick={() => setFilter("Todos")}>Mostrar Todos</button>
+        <button onClick={() => setFilter("Vivo")}>Mostrar Vivos</button>
+        <button onClick={() => setFilter("Fallecido")}>
+          Mostrar Fallecidos
+        </button>
+      </div>
       <ul className={styles.characters}>
         {filteredCharacters.map((item) => (
           <Card item={item} key={item._id} data-testid="card"></Card>

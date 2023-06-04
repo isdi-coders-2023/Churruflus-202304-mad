@@ -7,7 +7,7 @@ export function PagingButtons() {
   } = useContext(AppContext);
 
   return (
-    <div className={styles.buttons}>
+    <div className={styles.paging}>
       <button
         className={styles.text_button}
         onClick={() => {
