@@ -14,7 +14,7 @@
   color: yellow;
   background-color: #1e1e1c;
   font-family: Rock Salt, cursive;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
@@ -28,6 +28,12 @@
   word-break: break-all;
   margin: 1.2rem 0;
   border: 1px solid transparent;
+  object-fit: contain;
+
+  @media (min-width: 1200px) {
+    font-size: 0.8rem;
+    letter-spacing: 0.02;
+  }
 }
 
 .name_box:hover {
