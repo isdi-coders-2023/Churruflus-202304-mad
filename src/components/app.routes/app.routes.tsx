@@ -10,7 +10,10 @@ export function AppRoutes() {
   return (
     <Suspense>
       <Routes>
-        <Route path="apiPrivate" element={<ApiPrivate></ApiPrivate>}></Route>
+        <Route
+          path="apiPrivate"
+          element={<ApiPrivate>{<p></p>}</ApiPrivate>}
+        ></Route>
         <Route path="/" element={<List></List>}></Route>
         <Route path="/details/:id" element={<DetailPage></DetailPage>}></Route>
         <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
