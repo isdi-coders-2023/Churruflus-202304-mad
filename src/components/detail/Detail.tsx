@@ -14,8 +14,8 @@ export default function DetailCard() {
 
   return (
     <>
-      <section>
-        <ul className={styles.card_structure}>
+      <section className={styles.card_structure}>
+        <ul>
           <li>
             <li className={styles.name}>{item.Nombre}</li>
             <img src={item.Imagen} alt={item.Nombre} width={100} height={200} />
